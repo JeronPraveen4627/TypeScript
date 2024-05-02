@@ -1,0 +1,35 @@
+
+#homePage
+{
+
+   
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+#newUserPage
+{
+    display: none;
+}
+#exsitingUserPage
+{
+    display:none;
+}
+#loginPage
+{
+    display:none;
+}
+#medicinePage
+{
+    display:none;
+}
+button{
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    border:  0px solid white;
+    background-color: rgb(16, 14, 14);
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+}
