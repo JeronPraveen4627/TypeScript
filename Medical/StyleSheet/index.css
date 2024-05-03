@@ -1,8 +1,6 @@
 
 #homePage
 {
-
-   
     justify-content: center;
     align-items: center;
     display: block;
@@ -32,4 +30,26 @@ button{
     color: white;
     margin-top: 10px;
     font-size: 15px;
+}
+#purchasePage
+{
+    display:none;
+
+}
+#rechargePage
+{
+    display:none;
+
+}
+#showBalance
+{
+    display:none;
+}
+#OrderPage
+{
+    display:none;
+}
+#medicineCount
+{
+    display:none;
 }

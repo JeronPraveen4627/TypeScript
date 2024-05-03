@@ -18,24 +18,31 @@
 
         <div id="newUserPage">
             <h3>Sign Up Page</h3>
-            <label> User Name : </label>
+            <label> User Name : </label><br>
             <input type="text" id="newUserName" onkeyup="checkNewUserName('newUserName')"><br><br>
-            <!-- <label for="age">Age:</label> -->
-            <label>Email : </label>
+            <label>Email : </label><br>
             <input type="text" id="newUserEmail" onkeyup="CheckNewUserAge('newUserEmail')"><br><br>
-            <label>Password : </label>
+            <label>Password : </label><br>
             <input type="password" id="newUserPassword" onkeyup="CheckNewUserAge('newUserPassword')"><br><br>
-            <label>Phone Number : </label>
+            <label>Phone Number : </label><br>
             <input type="text"id="newUserPhoneNumber" onkeyup="CheckNewUserPhoneNumber('newUserPhoneNumber')"><br><br>
             <button onclick="signUp()">Sign Up</button>
         </div>
         <div id="exsitingUserPage">
             <h3>Existing User</h3>
-            <label>Email:</label>
+            <label>Email:</label><br>
             <input type="text" id="userLoginID"><br><br>
-            <label>Password:</label>
+            <label>Password:</label><br>
             <input type="password" id="userPassword"><br><br>
             <button type="button" onclick="signIn()">Login</button>
+
+            <table id="users">
+                <tr>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Balance</th>
+                </tr>
+            </table>
         </div>
 
         <div id="loginPage">
@@ -43,26 +50,66 @@
             <button type="button" onclick="DisplayHomePage()"> Home Page</button>
             <button type="button" onclick="medicineDetails()" id="medicinebutton"> Medicine Details</button>
             <button type="button" onclick="purchase()"> Purchase</button>
+            <button type="button" onclick="OrderHistroy()"> Order Histroy</button>
             <button type="button" onclick="cancel()"> Cancel</button>
             <button type="button" onclick="topUp()"> Topup</button>
-            <button type="button" onclick="Showbalance()"> Show Balance</button>
+            <button type="button" onclick="Balance()"> Show Balance</button>
         </div>
 
         <div id="medicinePage">
-
-            <button onclick="DisplayHomePage()">Go Home</button><br>
             <h2>Medicine Details</h2>
             <table id="medicineTable">
+            </table>    
+            </div>
+        </div>
+
+        <div id="purchasePage">
+            <h2>Medicine Details</h2>
+            <table id="purchageTable">
                 <tr>
-                    <th>Medicine ID</th>
                     <th>Medicine Name</th>
                     <th>Medicine Count</th>
                     <th>Medicine Price</th>
-                </tr>
-            </table>    
+                    <th>Expired Date</th>
+                    <th>Purchase</th>
+                </tr>      
+            </table> 
             </div>
-    
         </div>
+        <div id="medicineCount">
+            <label>Quantity:</label>
+            <input type="number" id="medicineQuantity">  
+            <button onclick="medicinePurchase()">Buy Medicine</button> 
+        </div>
+    
+        <div id="rechargePage">
+            <h2>TOPUP</h2>
+            <label>Enter Topup Amount:</label>
+            <input type="text"id="rechargeAmount">
+            <button id="Recharge()" onclick="Recharge()">Recharge</button>
+        </div>
+        
+        <div id="showBalance">
+            <h2>Balance Amount</h2>
+           <div id="balanceAmount"></div>
+        </div>
+
+        <div id="OrderPage">
+            <table id="OrderTable">
+            </table>
+        </div>
+
+
+
+
+        <!-- <div>
+            <label>Medicine ID:</label>
+            <input type="text" id="medicineId"><br><br>
+            <label >Medicine Count:</label>
+            <input type="text" id="medicineCount"><br><br>
+
+        </div> -->
+        
         
 </body>
 </html>
